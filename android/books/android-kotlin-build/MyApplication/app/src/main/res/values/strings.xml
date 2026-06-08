@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="first_name_text">First name:</string>
+    <string name="last_name_text">Last name:</string>
+    <string name="ip_address_text">IP address:</string>
+    <string name="enter_button_text">Enter</string>
+    <string name="welcome_to_the_app">Welcome to the app, %1$s!</string>
+    <string name="please_enter_a_name">Please enter a full name!</string>
+
+    <string name="create_rgb_color_text_view">Create an RGB Color</string>
+    <string name="hexadecimal_character_text_view">Add two hexadecimal characters between 0–9, A-F\nor a-f without the \'#\' for each channel</string>
+    <string name="red_channel_input_layout">Red Channel</string>
+    <string name="green_channel_input_layout">Green Channel</string>
+    <string name="blue_channel_input_layout">Blue Channel</string>
+    <string name="create_rgb_color_button">CREATE RGB COLOR</string>
+    <string name="created_color_display_text_view">Created color display panel</string>
+</resources>

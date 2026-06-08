@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_700">#FF3700B3</color>
+
+    <!-- 
+      [Material 3]
+      Material 3는 고정 색상 대신 ‘Color Role’ 개념을 사용한다.
+      사용자 배경화면에 맞춰 색상이 변하는 **‘Dynamic Color’**가 기본이며,
+      colorPrimary 같은 속성에 고정값 대신 시스템이 생성한 동적 테마 값을 연결해 적용한다.
+    -->
+</resources>
