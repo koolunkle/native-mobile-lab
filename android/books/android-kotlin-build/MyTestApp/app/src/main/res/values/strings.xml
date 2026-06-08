@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Test App</string>
+
+    <string name="string_1">string1</string>
+    <string name="string_2">string2</string>
+
+    <string name="calculate">Calculate</string>
+
+    <string name="result">Result %1$s</string>
+    <string name="error">Error</string>
+
+    <string name="the_sum_of_numbers_from_1_to_is">The sum of numbers from 1 to %1$d is: %2$s</string>
+    <string name="error_invalid_number">Error: Invalid number</string>
+</resources>
