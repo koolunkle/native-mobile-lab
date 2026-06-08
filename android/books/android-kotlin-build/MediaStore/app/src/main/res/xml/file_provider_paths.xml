@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!--<external-path
+        name="photos"
+        path="Android/data/com.example.mediastore/files/Pictures" />
+    <external-path
+        name="videos"
+        path="Android/data/com.example.mediastore/files/Movies" />-->
+
+    <external-files-path
+        name="photos"
+        path="Pictures" />
+    <external-files-path
+        name="videos"
+        path="Movies" />
+</paths>
