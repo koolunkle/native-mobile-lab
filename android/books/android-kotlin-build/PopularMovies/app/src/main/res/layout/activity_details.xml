@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.popularmovies.ui.details.DetailsViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.details.DetailsActivity">
+
+        <ImageView
+            android:id="@+id/movie_poster"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="@dimen/layout_margin"
+            android:contentDescription="@string/movie_poster"
+            app:imageUrl="@{viewModel.movie.posterPath}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/title_text"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_margin"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="@{viewModel.movie.title}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/movie_poster"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/release_text"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.movie.releaseYear}"
+            app:layout_constraintEnd_toEndOf="@id/title_text"
+            app:layout_constraintStart_toStartOf="@+id/title_text"
+            app:layout_constraintTop_toBottomOf="@id/title_text"
+            tools:text="Release" />
+
+        <TextView
+            android:id="@+id/overview_text"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:text="@{viewModel.movie.overview}"
+            app:layout_constraintEnd_toEndOf="@+id/release_text"
+            app:layout_constraintStart_toStartOf="@+id/movie_poster"
+            app:layout_constraintTop_toBottomOf="@+id/movie_poster"
+            tools:text="Overview" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
